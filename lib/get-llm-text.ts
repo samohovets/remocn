@@ -53,7 +53,7 @@ export async function getLLMText(page: DocPage): Promise<string> {
     )
   )
     facts.push(
-      `- Add to a composition as an editable copy: \`npx remotion elements use ${SITE_URL}${page.url} --composition <id>\``,
+      `- Add to a composition as an editable copy: \`npx remotion elements use ${SITE_URL}${page.url} --composition <id> --yes\``,
     );
   if (data.vibe) facts.push(`- Vibe: ${data.vibe}`);
   if (data.length) facts.push(`- Natural length: ${formatLength(data.length)}`);
